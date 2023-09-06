@@ -2,7 +2,10 @@
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 ---
+
 <BaseLayout title={frontmatter.title}>
+  <main class="main-container">
     <p>Written by {frontmatter.author}</p>
     <slot />
+  </main>
 </BaseLayout>
