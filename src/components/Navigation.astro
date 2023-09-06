@@ -1,5 +1,105 @@
 ---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import aboutIcon from "../images/aboutIcon.webp";
+import blogIcon from "../images/blogIcon.webp";
+import musicIcon from "../images/musicIcon.webp";
+import artIcon from "../images/artIcon.webp";
+import computerIcon from "../images/computerSpritesheet.webp";
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+
+<div class="nav-links">
+  <div class="nav-icon-container">
+    <a class="nav-link" href="/about">
+      <div id="about-icon" class="nav-icon">
+      </div>
+    </a>
+    <a class="nav-link" href="/blog">
+      <Image class="nav-icon" src={blogIcon} alt="Blog Icon" />
+    </a>
+    <a class="nav-link" href="/music">
+      <Image class="nav-icon" src={musicIcon} alt="Music Icon" />
+    </a>
+    <a class="nav-link" href="/art">
+      <Image class="nav-icon" src={artIcon} alt="Art Icon" />
+    </a>
+    <a class="nav-link" href="/computer">
+      <div id="computer-icon" class="nav-icon">
+      </div>
+    </a>
+  </div>
+</div>
+
+<style>
+  .nav-icon-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 0.75rem;
+  }
+  .nav-link {
+    width: 15%;
+    display: inline-block;
+  }
+  .nav-icon {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  #computer-icon {
+    background-image: url('../images/computerSpritesheet.webp');
+    background-size: 800%;
+    background-position: 0%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #about-icon {
+    background-image: url('../images/aboutSpritesheet.webp');
+    background-size: 800%;
+    background-position: 0%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #computer-icon:hover {
+    animation: icon-animation 1s steps(8) infinite;
+  }
+
+  #about-icon:hover {
+    animation: icon-animation 1s steps(8) infinite;
+  }
+
+  @keyframes icon-animation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: -800%;
+    }
+  }
+
+  @media screen and (min-width: 1051px) {
+    .nav-icon-container {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+
+    .nav-link {
+      margin: 1rem;
+    }
+    .nav-icon {
+      width: 100%;
+    }
+    #computer-icon {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    #about-icon {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+</style>

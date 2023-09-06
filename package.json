@@ -12,6 +12,11 @@
   "dependencies": {
     "@astrojs/vercel": "^4.0.3",
     "@fontsource/lato": "^5.0.11",
-    "astro": "^3.0.7"
+    "astro": "^3.0.7",
+    "nanostores": "^0.9.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }

@@ -1,8 +1,64 @@
 ---
+import { Image } from "astro:assets";
+import githubIcon from '../images/githubIcon.webp';
+import linkedinIcon from '../images/linkedinIcon.webp';
+
 const platform = "github";
 const username = "withastro";
 ---
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+<footer class="footer">
+  <a href={`https://github.com/johnrusch`} target="_blank" rel="noopener" class="footer-link">
+    <Image class="footer-icon" src={githubIcon} alt="Github" />
+  </a>
+  <a href="https://www.linkedin.com/in/john-r-54a012184/" target="_blank" rel="noopener" class="footer-link">
+    <Image class="footer-icon" src={linkedinIcon} alt="LinkedIn" />
+  </a>
 </footer>
+
+<style>
+  .footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-link {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    margin: 1rem;
+  }
+
+  .footer-icon {
+    width: 100%;
+    height: auto;
+    opacity: .7;
+    border-radius: 2rem;
+  }
+
+  .footer-icon:hover,
+  .footer-icon:focus {
+    background-color: #FFA88A;
+    opacity: 1;
+  }
+
+  .footer-icon:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1051px){
+    .footer-link {
+      width: 5%;
+      height: 5%;
+    }
+  }
+
+</style>
