@@ -3,12 +3,14 @@ import { Image } from "astro:assets";
 import logoImage from "../images/logoImage.webp";
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
-import horizontalLine from '../images/horizontalLine.webp';
+import horizontalLine from "../images/horizontalLine.webp";
 ---
 
 <header id="header">
   <div class="header-container">
-    <Image src={logoImage} alt="john's wiki logo" id="logo-image" />
+    <a href="/">
+      <Image src={logoImage} alt="john's wiki logo" id="logo-image" />
+    </a>
     <Hamburger />
   </div>
   <nav id="nav-element">
