@@ -11,21 +11,19 @@ import computerIcon from "../images/computerSpritesheet.webp";
 <div class="nav-links">
   <div class="nav-icon-container">
     <a class="nav-link" href="/about">
-      <div id="about-icon" class="nav-icon">
-      </div>
+      <div id="about-icon" class="nav-icon animated-icon"></div>
     </a>
     <a class="nav-link" href="/blog">
-      <Image class="nav-icon" src={blogIcon} alt="Blog Icon" />
+      <div id="blog-icon" class="nav-icon animated-icon"></div>
     </a>
     <a class="nav-link" href="/music">
-      <Image class="nav-icon" src={musicIcon} alt="Music Icon" />
+      <div id="music-icon" class="nav-icon animated-icon"></div>
     </a>
     <a class="nav-link" href="/art">
-      <Image class="nav-icon" src={artIcon} alt="Art Icon" />
+      <div id="art-icon" class="nav-icon animated-icon"></div>
     </a>
     <a class="nav-link" href="/computer">
-      <div id="computer-icon" class="nav-icon">
-      </div>
+      <div id="computer-icon" class="nav-icon animated-icon"></div>
     </a>
   </div>
 </div>
@@ -34,12 +32,14 @@ import computerIcon from "../images/computerSpritesheet.webp";
   .nav-icon-container {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 0.75rem;
   }
   .nav-link {
-    width: 15%;
-    display: inline-block;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-icon {
     display: block;
@@ -49,25 +49,31 @@ import computerIcon from "../images/computerSpritesheet.webp";
   }
 
   #computer-icon {
-    background-image: url('../images/computerSpritesheet.webp');
-    background-size: 800%;
-    background-position: 0%;
-    width: 3.5rem;
-    height: 3.5rem;
+    background-image: url("../images/computerSpritesheet.webp");
   }
   #about-icon {
-    background-image: url('../images/aboutSpritesheet.webp');
+    background-image: url("../images/aboutSpritesheet.webp");
+  }
+  #music-icon {
+    background-image: url("../images/musicSpritesheet.webp");
+  }
+
+  #art-icon {
+    background-image: url("../images/artSpritesheet.webp");
+  }
+
+  #blog-icon {
+    background-image: url("../images/blogSpritesheet.webp");
+  }
+
+  .animated-icon {
     background-size: 800%;
     background-position: 0%;
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #computer-icon:hover {
-    animation: icon-animation 1s steps(8) infinite;
-  }
-
-  #about-icon:hover {
+  .animated-icon:hover {
     animation: icon-animation 1s steps(8) infinite;
   }
 
@@ -92,7 +98,12 @@ import computerIcon from "../images/computerSpritesheet.webp";
     .nav-icon {
       width: 100%;
     }
-    #computer-icon {
+
+    .animated-icon {
+      width: 8rem;
+      height: 8rem;
+    }
+    /* #computer-icon {
       width: 8rem;
       height: 8rem;
     }
@@ -101,5 +112,10 @@ import computerIcon from "../images/computerSpritesheet.webp";
       width: 8rem;
       height: 8rem;
     }
+
+    #music-icon {
+      width: 8rem;
+      height: 8rem;
+    } */
   }
 </style>
