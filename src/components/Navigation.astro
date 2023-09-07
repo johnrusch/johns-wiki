@@ -6,24 +6,26 @@ import blogIcon from "../images/blogIcon.webp";
 import musicIcon from "../images/musicIcon.webp";
 import artIcon from "../images/artIcon.webp";
 import computerIcon from "../images/computerSpritesheet.webp";
+
+const currentUrl = Astro.url.pathname
 ---
 
 <div class="nav-links">
   <div class="nav-icon-container">
     <a class="nav-link" href="/about">
-      <div id="about-icon" class="nav-icon animated-icon"></div>
+      <div id="about-icon" class=`nav-icon animated-icon ${currentUrl === '/about' ? 'active' : ''}`></div>
     </a>
     <a class="nav-link" href="/computer">
-      <div id="computer-icon" class="nav-icon animated-icon"></div>
+      <div id="computer-icon" class=`nav-icon animated-icon ${currentUrl === '/computer' ? 'active' : ''}`></div>
     </a>
     <a class="nav-link" href="/blog">
-      <div id="blog-icon" class="nav-icon animated-icon"></div>
+      <div id="blog-icon" class=`nav-icon animated-icon ${currentUrl === '/blog' ? 'active' : ''}`></div>
     </a>
     <a class="nav-link" href="/music">
-      <div id="music-icon" class="nav-icon animated-icon"></div>
+      <div id="music-icon" class=`nav-icon animated-icon ${currentUrl === '/music' ? 'active' : ''}`></div>
     </a>
     <a class="nav-link" href="/art">
-      <div id="art-icon" class="nav-icon animated-icon"></div>
+      <div id="art-icon" class=`nav-icon animated-icon ${currentUrl === '/art' ? 'active' : ''}`></div>
     </a>
   </div>
 </div>
@@ -46,6 +48,7 @@ import computerIcon from "../images/computerSpritesheet.webp";
     width: 100%;
     height: auto;
     opacity: 0.8;
+    border-radius: 1rem;
   }
 
   #computer-icon {
