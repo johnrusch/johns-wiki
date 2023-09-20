@@ -1,12 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import kissMe from "../images/kissMe.webp"
 ---
 <BaseLayout title="john's blog">
-  <main>
-      <ul>
+  <main class="page-container">
+      <ul class="page-text list">
         <li><a href="/blurbles/blurble-1/">Blurble 1</a></li>
         <li><a href="/blurbles/blurble-2/">Blurble 2</a></li>
         <li><a href="/blurbles/blurble-3/">Blurble 3</a></li>
       </ul>
+      <div class="page-image">
+        <Image class="page-image-img" src={kissMe} alt="signs from the craft store" />
+      </div>
   </main>
 </BaseLayout>
+

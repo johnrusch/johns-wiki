@@ -1,11 +1,5 @@
 ---
 import "../styles/global.css";
-import { Image } from "astro:assets";
-import aboutIcon from "../images/aboutIcon.webp";
-import blogIcon from "../images/blogIcon.webp";
-import musicIcon from "../images/musicIcon.webp";
-import artIcon from "../images/artIcon.webp";
-import computerIcon from "../images/computerSpritesheet.webp";
 
 const currentUrl = Astro.url.pathname
 ---
@@ -36,6 +30,7 @@ const currentUrl = Astro.url.pathname
     width: 100%;
     justify-content: space-evenly;
     margin-top: 0.75rem;
+    margin-bottom: 1rem;
   }
   .nav-link {
     width: 50%;
@@ -72,8 +67,8 @@ const currentUrl = Astro.url.pathname
   .animated-icon {
     background-size: 800%;
     background-position: 0%;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.7rem;
+    height: 4.7rem;
   }
 
   .animated-icon:hover {
@@ -93,10 +88,15 @@ const currentUrl = Astro.url.pathname
     .nav-icon-container {
       justify-content: flex-end;
       margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .nav-icon-container:last-child {
+      margin-right: 0;
     }
 
     .nav-link {
-      margin: 1rem;
+      /* margin: 1rem; */
     }
     .nav-icon {
       width: 100%;

@@ -1,9 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import factoryImage from '../images/factory.webp'
+import Carousel from '../components/Carousel.astro';
 ---
 
 <BaseLayout title="john's wiki">
 	<main>
+		<!-- <Image class="factory-image" src={factoryImage} alt="factory" /> -->
+		<Carousel />
 	</main>
 </BaseLayout>
 
@@ -11,11 +16,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 100%;
+		height: 85vh;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+
+	.factory-image {
+		left: 0;
+		right: 0;
+		height: auto;
+		margin-bottom: 2rem;
 	}
 	.astro-a {
 		position: absolute;
@@ -63,5 +76,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+
+	@media screen and (min-width: 1051px) {
+		main {
+			width: 70%;
+		}
 	}
 </style>

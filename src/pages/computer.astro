@@ -1,9 +1,115 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import computerTurtle from "../images/computerTurtle.webp";
 ---
 
 <BaseLayout title="john's computer">
-    <main>
+  <main class="page-container">
+    <section class="page-text">
+      <p>
+        Now, imagine you’re out there on a bright and crisp fall afternoon,
+        watching your son run down the football field, zigzaggin' past the other
+        fellas, just like a pro. Now, think of a computer as his playbook. You
+        know how the playbook has got all them strategies, plans, and formations
+        drawn out detail by detail, helping him to make the right moves on the
+        field? Well, a computer is like that playbook but for almost anything
+        you can think of in the modern world.
+      </p>
 
-    </main>
+      <p>
+        A computer’s got this here brain called a central processin' unit, or
+        CPU for short, that works quicker than a hiccup. It's kind of like your
+        son, always thinkin' several steps ahead, plottin' out the best path
+        forward, makin' rapid-fire decisions in the blink of an eye.
+      </p>
+
+      <p>
+        But now, a computer ain’t just all about speed. It's also got memory,
+        kinda like how you remember all your daughter's volleyball plays and
+        your son’s football achievements. This memory stores all sorts of
+        important things, keepin' track of the data, so it can use it later on
+        when it needs it. It has two types of memory: one that remembers things
+        even when it’s turned off, like you remember the old days, and another
+        that forgets everything once it's shut down, a bit like forgettin' a bad
+        play and moving on to the next one.
+      </p>
+
+      <p>
+        Now picture your daughter playin' volleyball, she's got that there
+        network of teammates, always communicatin', passin' the ball back and
+        forth, workin' together like a well-oiled machine. A computer’s got
+        somethin' similar, a network that allows it to communicate with other
+        computers all over the world, sharin' information, just like how the
+        team shares the ball, workin' together to achieve a common goal.
+      </p>
+      <p>
+        And don’t forget the monitor, that’s like the scoreboard at the games,
+        showing you all the important info clear as day, keepin' you updated on
+        what's happenin' at every moment.
+      </p>
+      <p>
+        So there you have it. A computer is like a combination of a playbook, a
+        super-fast decision maker like your son, a memory keeper like you, and a
+        teamwork facilitator like your daughter’s volleyball team, all rolled
+        into one fine piece of machinery, helping folks to work, learn, and stay
+        connected in this fast-paced world we're living in.
+      </p>
+
+      <p>
+        Now, you remember I mentioned the CPU, which is the brain of the
+        operation, right? Well, this thing can process a sheer mountain of
+        calculations and decisions in a split second, sort of like how your son
+        has that keen eye on the field, picking out the best paths and makin'
+        split-second decisions that can turn the tide of the game. And as he
+        grew, he just got better and better, understandin' the nuances of the
+        game, same as a computer with a newer, more powerful CPU can do more
+        complex tasks faster than you can say "touchdown."
+      </p>
+      <p>
+        Now speakin' of memory, it holds onto a treasure trove of information.
+        We've got one kind called RAM; it's like the immediate thoughts in your
+        head, it holds onto the most recent stuff, making it quick and easy to
+        access. Now, your son's journey through life, from scurrying as a little
+        tyke on the family farm to becoming a running back star in high school,
+        is kind of stored in a memory space like a hard drive, where all the
+        long-term memories and experiences are kept, built layer upon layer,
+        enriching and informin' his path as he stepped boldly into the world,
+        developin' a strong sense for social justice, ready to make a change in
+        the world with all that wisdom he's amassed over the years.
+      </p>
+      <p>
+        And remember the networkin' part? Well, in the big wide world of
+        computers, there's this amazing network called the internet that
+        connects computers far and wide, allowin' them to share information
+        across vast distances in the blink of an eye. It's kinda like when your
+        son went off to college, broadening his horizons, meetin' new people,
+        learnin' new things, and forming connections that span across states,
+        bringin' together a wealth of knowledge and perspectives, just like how
+        computers can pull information from all over the world.
+      </p>
+      <p>
+        As for the monitor, it's the window into the soul of the computer,
+        givin' you a clear view of everything that's happening inside that
+        machine, showcasing a world of knowledge, entertainment, and
+        connections, like a living testament to your son's ever-evolving journey
+        through life, highlighting his accomplishments and showcassin' the depth
+        of his experiences.
+      </p>
+      <p>
+        Now, throughout all these details about your son, I reckon we haven't
+        forgotten your daughter, still steadfastly playing volleyball, holding
+        her ground, and bein' an important part of the family, keeping up the
+        spirit and embodyin' the joy of the game, though we ain't goin' in
+        details about her journey today.
+      </p>
+    </section>
+    <div class="page-image">
+      <Image
+        src={computerTurtle}
+        alt="A self-portrait of John"
+        class="page-image-img"
+      />
+    </div>
+  </main>
 </BaseLayout>

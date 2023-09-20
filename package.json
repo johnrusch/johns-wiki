@@ -13,7 +13,9 @@
     "@astrojs/vercel": "^4.0.3",
     "@fontsource/lato": "^5.0.11",
     "astro": "^3.0.7",
-    "nanostores": "^0.9.3"
+    "nanostores": "^0.9.3",
+    "react": "^18.2.0",
+    "swiper": "^10.2.0"
   },
   "devDependencies": {
     "prettier": "^3.0.3",
