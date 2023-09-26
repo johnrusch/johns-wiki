@@ -6,14 +6,14 @@ import Hamburger from "./Hamburger.astro";
 import '../styles/global.css';
 ---
 
-<header id="header">
-  <div class="header-container">
-    <a href="/" id="logo-link">
-      <Image src={logoImage} alt="john's wiki logo" id="logo-image" />
+<header id="header" class="flex flex-col items-center p-6 pb-0 lg:flex lg:flex-row lg:justify-between lg:p-0">
+  <div class="header-container flex justify-between items-center w-full">
+    <a href="/" class="w-3/4 h-auto hover:cursor-pointer">
+      <Image src={logoImage} alt="john's wiki logo" class="w-full h-auto rounded-xl sm:w-96 hover:bg-light-yellow"/>
     </a>
     <Hamburger />
   </div>
-  <nav id="nav-element">
+  <nav class="flex w-full">
     <Navigation />
   </nav>
 </header>

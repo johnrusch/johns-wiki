@@ -1,49 +1,79 @@
 ---
-import "../styles/global.css";
-
-const currentUrl = Astro.url.pathname
+const currentUrl = Astro.url.pathname;
 ---
 
-<div class="nav-links">
-  <div class="nav-icon-container">
-    <a class="nav-link" href="/about">
-      <div id="about-icon" class=`nav-icon animated-icon ${currentUrl === '/about' ? 'active' : ''}`></div>
+<div
+  class="nav-links flex absolute w-full max-h-0 top-20 left-0 right-0 m-0 transit overflow-hidden z-50"
+>
+  <div
+    class="flex w-full justify-evenly mt-3 mb-4 sm:justify-end sm:mt-0 sm:mb-0"
+  >
+    <a class="w-1/2 flex justify-center items-center" href="/about">
+      <div
+        id="about-icon"
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/about' ? 'active' : ''}`
+      >
+      </div>
     </a>
-    <a class="nav-link" href="/computer">
-      <div id="computer-icon" class=`nav-icon animated-icon ${currentUrl === '/computer' ? 'active' : ''}`></div>
+    <a class="w-1/2 flex justify-center items-center" href="/computer">
+      <div
+        id="computer-icon"
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/computer' ? 'active' : ''}`
+      >
+      </div>
     </a>
-    <a class="nav-link" href="/blog">
-      <div id="blog-icon" class=`nav-icon animated-icon ${currentUrl === '/blog' ? 'active' : ''}`></div>
+    <a class="w-1/2 flex justify-center items-center" href="/blog">
+      <div
+        id="blog-icon"
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/blog' ? 'active' : ''}`
+      >
+      </div>
     </a>
-    <a class="nav-link" href="/music">
-      <div id="music-icon" class=`nav-icon animated-icon ${currentUrl === '/music' ? 'active' : ''}`></div>
+    <a class="w-1/2 flex justify-center items-center" href="/music">
+      <div
+        id="music-icon"
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/music' ? 'active' : ''}`
+      >
+      </div>
     </a>
-    <a class="nav-link" href="/art">
-      <div id="art-icon" class=`nav-icon animated-icon ${currentUrl === '/art' ? 'active' : ''}`></div>
+    <a class="w-1/2 flex justify-center items-center" href="/art">
+      <div
+        id="art-icon"
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/art' ? 'active' : ''}`
+      >
+      </div>
     </a>
   </div>
 </div>
 
 <style>
-  .nav-icon-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 0.75rem;
-    margin-bottom: 1rem;
+  .nav-links {
+    transition: max-height 0.5s ease-in-out;
+    background-color: #faf3e0;
   }
-  .nav-link {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .nav-links.expanded {
+    max-height: 1000px;
+    transition: max-height 0.8s ease-in-out;
   }
-  .nav-icon {
+
+  .nav-links.collapsed {
+    transition: max-height 0.5s ease-in-out;
+  }
+  /* .nav-icon {
     display: block;
     width: 100%;
     height: auto;
     opacity: 0.8;
     border-radius: none;
+  } */
+
+  #computer-icon.active,
+  #about-icon.active,
+  #music-icon.active,
+  #art-icon.active,
+  #blog-icon.active {
+    background-color: #ffa8d1;
   }
 
   #computer-icon {
@@ -73,6 +103,8 @@ const currentUrl = Astro.url.pathname
 
   .animated-icon:hover {
     animation: icon-animation 1s steps(8) infinite;
+    background-color: #8de08a;
+    opacity: 1;
   }
 
   @keyframes icon-animation {
@@ -85,41 +117,15 @@ const currentUrl = Astro.url.pathname
   }
 
   @media screen and (min-width: 1051px) {
-    .nav-icon-container {
-      justify-content: flex-end;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
 
-    .nav-icon-container:last-child {
-      margin-right: 0;
-    }
-
-    .nav-link {
-      /* margin: 1rem; */
-    }
-    .nav-icon {
-      width: 100%;
-      border-radius: 0.5rem;
+    .nav-links {
+      position: unset;
+      max-height: 500px;
     }
 
     .animated-icon {
       width: 8rem;
       height: 8rem;
     }
-    /* #computer-icon {
-      width: 8rem;
-      height: 8rem;
-    }
-
-    #about-icon {
-      width: 8rem;
-      height: 8rem;
-    }
-
-    #music-icon {
-      width: 8rem;
-      height: 8rem;
-    } */
   }
 </style>

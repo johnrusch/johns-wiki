@@ -1,28 +1,17 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Card from '../components/Card.astro';
-import { Image } from 'astro:assets';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { Image } from "astro:assets";
 import selfportrait1 from "../images/selfportrait-1.webp";
-import '../styles/global.css';
+import "../styles/global.css";
+
+import { Content as AboutText } from "../markdown/about.md";
 ---
 
-<BaseLayout title="about john">
-	<main class="page-container">
-		<section class="page-text">
-			<p>
-				Hello! I'm John.
-			</p>
-			<p>
-				I'm a software engineer interested in data engineering, cloud engineering, and makin little things here and <a href="/computer">there</a>. Like this website.
-			</p>
-	
-			<p>
-				I also like <a href="/music">music</a>, <a href="/art">drawing</a>, sewing, watching movies, and hanging out.
-			</p>
-		</section>
-		<div class="page-image">
-			<Image src={selfportrait1} alt="A self-portrait of John" class="page-image-img" />
-		</div>
-	</main>
-</BaseLayout>
-
+<PageLayout
+  image={selfportrait1}
+  imageAlt="A self-portrait of John"
+  title="about john"
+>
+  <AboutText class="prose-lg"/>
+</PageLayout>

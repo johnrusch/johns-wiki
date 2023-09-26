@@ -1,20 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import '../styles/global.css';
+
 ---
-<div id="hamburger-icon">
+<div id="hamburger-icon" class="justify-self-end w-16 h-16 cursor-pointer">
 </div>
 
 <style>
   #hamburger-icon {
-    cursor: pointer;
-    justify-self: flex-end;
-    width: 4rem;
-    height: 4rem;
     background-image: url('../images/hamburgerSpritesheet.webp');
     background-size: 1100%;
     background-position: 0%;
-    opacity: 0.7;
   }
 
   @keyframes animate-to-end {

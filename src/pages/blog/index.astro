@@ -1,0 +1,28 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import kissMe from "../../images/kissMe.webp";
+import { getCollection } from "astro:content";
+import ListCard from "../../components/ListCard.astro";
+
+const items = await getCollection("items", ({ data, id }) => {
+  return !data.draft && id.startsWith("blog/");
+});
+---
+
+<PageLayout
+  title="john's blog"
+  image={kissMe}
+  imageAlt="signs from the craft store"
+>
+  {
+    items.map((item) => {
+      return (
+        <ListCard
+          title={item.data.title}
+          createdDate={item.data.createdDate.toDateString()}
+          slug={item.slug}
+        />
+      );
+    })
+  }
+</PageLayout>

@@ -1,0 +1,5 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "dist/pages/blogs/entry.blurble-1.astro.mjs",
+	"launcherType": "Nodejs"
+}

@@ -1,0 +1,63 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "entry._image.astro"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "entry.index.astro"
+		},
+		{
+			"src": "^\\/computer\\/?$",
+			"dest": "entry.computer.astro"
+		},
+		{
+			"src": "^\\/about\\/?$",
+			"dest": "entry.about.astro"
+		},
+		{
+			"src": "^\\/blogs\\/thatsPrettyCool-1\\/?$",
+			"dest": "entry.thatsprettycool-1.astro"
+		},
+		{
+			"src": "^\\/blogs\\/blurble-1\\/?$",
+			"dest": "entry.blurble-1.astro"
+		},
+		{
+			"src": "^\\/blogs\\/blurble-2\\/?$",
+			"dest": "entry.blurble-2.astro"
+		},
+		{
+			"src": "^\\/blogs\\/blurble-3\\/?$",
+			"dest": "entry.blurble-3.astro"
+		},
+		{
+			"src": "^\\/music\\/?$",
+			"dest": "entry.music.astro"
+		},
+		{
+			"src": "^\\/blog\\/?$",
+			"dest": "entry.blog.astro"
+		},
+		{
+			"src": "^\\/art(?:\\/(.*?))?\\/?$",
+			"dest": "entry._---slug_.astro"
+		},
+		{
+			"src": "^\\/art\\/?$",
+			"dest": "entry.art.astro"
+		}
+	]
+}

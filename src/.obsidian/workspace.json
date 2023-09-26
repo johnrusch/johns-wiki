@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "518df3ec6b1b4c91",
+    "type": "split",
+    "children": [
+      {
+        "id": "d38ff55a6e74efd4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "805f6e5ec233ed95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/items/art/Somewhere in France.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d25b10a1ced7e36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/items/computer/Using AWS Glue.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c6c8d777851b53d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "markdown/about.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fabcd3ce2f8fa9f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f719eb6c94a8c671",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "454a1e5337448507",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b71a280074a7e2af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eccfa11ff9be71b8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "42ad8a6d643d1605",
+    "type": "split",
+    "children": [
+      {
+        "id": "d02fb71e4b68cd45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b557f0e1a0a9a8a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/items/computer/Using AWS Glue.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eaeeb880dacc4786",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/items/computer/Using AWS Glue.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d9d87511883a46f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c48433842c33464a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/items/computer/Using AWS Glue.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2d25b10a1ced7e36",
+  "lastOpenFiles": [
+    "images/bros.webp",
+    "images/resized_PicsArt_02-13-08.01.15.jpg.webp",
+    "images/willieNelsonPicnic.webp",
+    "images/resized_IMG_1212.JPG.webp",
+    "images/horizontalLine.webp",
+    "images/resized_IMG_1349.PNG.webp",
+    "images/horizontalLine.PNG",
+    "images/IMG_1349.PNG",
+    "images/borderBoxes/borderBox4.webp",
+    "images/borderBoxes/borderBox3.webp",
+    "images/borderBoxes/borderBox2.webp",
+    "images/borderBoxes",
+    "markdown/computer.md",
+    "content/items/computer/Using AWS Glue.md",
+    "components/ListCard.astro",
+    "markdown/about.md",
+    "styles/temp.css",
+    "layouts/PageLayout.astro",
+    "content/items/blog/Saying Goodbye.md",
+    "layouts/BlogLayout.astro",
+    "markdown",
+    "content/about.md",
+    "content/items/computer/I made a mistake.md",
+    "_templates/blog_template.md",
+    "pages/blog/[...slug].astro",
+    "pages/blog/index.astro",
+    "pages/blog/blog.astro",
+    "pages/blog",
+    "content/items/art/Somewhere in France.md",
+    "_templates/art_template.md",
+    "_templates/computer_template.md",
+    "_templates/music_template.md",
+    "content/items/music/Worth It.md",
+    "content/items/art/That's Pretty Cool.md",
+    "content/items/That's Pretty Cool.md",
+    "content/art/That's Pretty Cool.md",
+    "content/item/That's Pretty Cool.md"
+  ]
+}

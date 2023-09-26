@@ -1,0 +1,30 @@
+---
+const { title, createdDate, slug } = Astro.props;
+const getRandomBox = (arr: Array<string>) => {
+  if (arr.length === 0) return;
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  return arr[randomIndex];
+};
+const boxes = [
+  "src/images/borderBoxes/borderBox1.webp",
+  "src/images/borderBoxes/borderBox2.webp",
+  "src/images/borderBoxes/borderBox3.webp",
+  "src/images/borderBoxes/borderBox4.webp",
+];
+---
+
+<a href={slug} class="no-underline">
+  <div
+    class="mb-2 hover:bg-light-green"
+    style={{
+      border: ".7rem solid transparent",
+      borderImage: `url(${getRandomBox(boxes)}) 20 fill`,
+      WebkitBorderImage: `url(${getRandomBox(boxes)}) 20 fill`,
+      OBorderImage: `url(${getRandomBox(boxes)}) 20 fill`,
+      borderImageSlice: "90 fill",
+    }}
+  >
+    <h2 class="sm:mt-2 sm:mb-2">{title}</h2>
+    <small>{createdDate}</small>
+  </div>
+</a>

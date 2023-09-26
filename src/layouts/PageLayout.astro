@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "./BaseLayout.astro";
+
+const { props } = Astro;
+---
+
+<BaseLayout title={props.title ? props.title : "johns.wiki"}>
+  <main
+    class="m-auto w-full h-75vh max-w-full flex flex-col-reverse justify-between items-center overflow-y-auto sm:flex-row sm:overflow-hidden sm:pt-4"
+  >
+    <section
+      class="w-4/5 flex-1 mt-4 sm:h-full sm:w-1/2 sm:overflow-y-scroll sm:mr-4 prose prose-lg"
+    >
+      <slot />
+    </section>
+    <section class="w-3/4 max-h-fit flex-1 box-border sm:h-full sm:ml-4">
+      {
+        props.image ? (
+          <Image
+            src={props.image}
+            class="w-full h-full object-contain object-center"
+            alt={props.imageAlt}
+          />
+        ) : null
+      }
+    </section>
+  </main>
+</BaseLayout>
+

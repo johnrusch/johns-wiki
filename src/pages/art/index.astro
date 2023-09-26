@@ -1,0 +1,28 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+import ListCard from "../../components/ListCard.astro";
+import bros from "../../images/bros.webp";
+
+const items = await getCollection("items", ({ data, id }) => {
+  return !data.draft && id.startsWith("art/");
+});
+---
+
+<PageLayout
+  title="john's computer"
+  image={bros}
+  imageAlt="Socrates and Plato in Raphael's School of Athens with hats on"
+>
+  {
+    items.map((item) => {
+      return (
+        <ListCard
+          title={item.data.title}
+          createdDate={item.data.createdDate.toDateString()}
+          slug={item.slug}
+        />
+      );
+    })
+  }
+</PageLayout>
