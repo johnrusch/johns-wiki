@@ -21,7 +21,7 @@ export function CarouselDefault({items, ...props}) {
   }
 
   return (
-    <Carousel autoplay={true} loop={true} className="rounded-lg h-full">
+    <Carousel autoplay={true} loop={true} className="rounded-lg sm:h-65vh">
       {renderSlides(items)}
     </Carousel>
   );

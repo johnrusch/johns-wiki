@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/items/computer/Using AWS Glue.md",
+                "file": "content/items/computer/Page Initially Scrolling to Bottom of Content on Refresh.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/items/computer/Using AWS Glue.md",
+                "file": "content/items/computer/Page Initially Scrolling to Bottom of Content on Refresh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/items/computer/Using AWS Glue.md",
+                "file": "content/items/computer/Page Initially Scrolling to Bottom of Content on Refresh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/items/computer/Using AWS Glue.md"
+                "file": "content/items/computer/Page Initially Scrolling to Bottom of Content on Refresh.md"
               }
             }
           }
@@ -173,6 +173,12 @@
   },
   "active": "2d25b10a1ced7e36",
   "lastOpenFiles": [
+    "scripts/scrollChecker.js",
+    "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png 1.webp",
+    "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png.webp",
+    "images/broken-ipad.webp",
+    "content/items/computer/Using AWS Glue.md",
+    "content/items/computer/Page Initially Scrolling to Bottom of Content on Refresh.md",
     "images/bros.webp",
     "images/resized_PicsArt_02-13-08.01.15.jpg.webp",
     "images/willieNelsonPicnic.webp",
@@ -180,13 +186,8 @@
     "images/horizontalLine.webp",
     "images/resized_IMG_1349.PNG.webp",
     "images/horizontalLine.PNG",
-    "images/IMG_1349.PNG",
-    "images/borderBoxes/borderBox4.webp",
-    "images/borderBoxes/borderBox3.webp",
-    "images/borderBoxes/borderBox2.webp",
     "images/borderBoxes",
     "markdown/computer.md",
-    "content/items/computer/Using AWS Glue.md",
     "components/ListCard.astro",
     "markdown/about.md",
     "styles/temp.css",

@@ -9,7 +9,6 @@ createdDate: 2023-09-24T19:47:45Z
 tags:
   - blog
 ---
-## Saying Goodbye
 
 I went to the café that I worked at for several years. As I was leaving with coffees and food, I saw a family who are regulars there sitting outside. I went over to them to say hello before I left.
 

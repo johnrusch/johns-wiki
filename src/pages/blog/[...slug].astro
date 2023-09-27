@@ -21,5 +21,6 @@ const { Content } = await entry.render();
   image={entry.data.image}
   imageAlt={entry.data.imageAlt}
 >
+  <h1 class="mb-4">{entry.data.title}</h1>
   <Content />
 </PageLayout>
