@@ -14,7 +14,7 @@ const { props } = Astro;
     >
       <slot />
     </section>
-    <section class=`w-full ${props.art ? "h-3/4" : "h-1/5"} mt-4 mb-4 box-border sm:flex-1 sm:h-full sm:ml-4`>
+    <section class=`w-full ${props.imageHeight ? props.imageHeight : "h-full"} mt-4 mb-4 box-border sm:flex-1 sm:h-full sm:ml-4`>
       {
         props.image ? (
           <Image

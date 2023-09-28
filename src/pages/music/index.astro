@@ -9,7 +9,12 @@ const items = await getCollection("items", ({ data, id }) => {
 });
 ---
 
-<PageLayout title="john's music" image={willieNelsonPicnic} imageAlt="a big organ">
+<PageLayout
+  title="john's music"
+  image={willieNelsonPicnic}
+  imageAlt="a big organ"
+  imageHeight="h-64"
+>
   {
     items.map((item) => {
       return (
@@ -17,6 +22,7 @@ const items = await getCollection("items", ({ data, id }) => {
           title={item.data.title}
           createdDate={item.data.createdDate.toDateString()}
           slug={item.slug}
+          link={item.data.link}
         />
       );
     })

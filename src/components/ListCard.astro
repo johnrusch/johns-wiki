@@ -1,5 +1,5 @@
 ---
-const { title, createdDate, slug } = Astro.props;
+const { title, createdDate, slug, link } = Astro.props;
 const getRandomBox = (arr: Array<string>) => {
   if (arr.length === 0) return;
   const randomIndex = Math.floor(Math.random() * arr.length);
@@ -13,7 +13,7 @@ const boxes = [
 ];
 ---
 
-<a href={slug} class="no-underline">
+<a href={link ? link : slug} class="no-underline" target={link ? "_blank" : "_self"}>
   <div
     class="mb-2 hover:bg-light-green"
     style={{
@@ -24,7 +24,7 @@ const boxes = [
       borderImageSlice: "90 fill",
     }}
   >
-    <h2 class="mt-2 mb-2">{title}</h2>
-    <small>{createdDate}</small>
+    <h3 class="mt-2 mb-2">{title}</h3>
+    {createdDate && <small>{createdDate}</small>}
   </div>
 </a>

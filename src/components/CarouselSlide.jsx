@@ -10,7 +10,7 @@ export function CarouselSlide({ item }) {
             className="h-full w-full object-cover"
           />
         ) : null}
-        <div className="text-center text-4xl rounded-lg absolute ml-2 mr-2 mb-20 sm:ml-20 sm:mb-32 bottom-0 p-4 left-0 w-auto grid bg-black/30">
+        <div className="text-center text-4xl rounded-lg absolute ml-2 mr-2 mb-20 sm:ml-20 sm:mb-20 sm:mr-20 bottom-0 p-4 left-0 w-auto grid bg-black/40">
           {title}
           {description ? (
             <>

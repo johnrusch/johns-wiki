@@ -13,16 +13,19 @@ const items = await getCollection("items", ({ data, id }) => {
   title="john's computer"
   image={computer}
   imageAlt="A computer in a café with a picture of Daniel Craig as the background"
+  imageHeight="h-64"
 >
-  {
-    items.map((item) => {
-      return (
-        <ListCard
-          title={item.data.title}
-          createdDate={item.data.createdDate.toDateString()}
-          slug={item.slug}
-        />
-      );
-    })
-  }
+  <div slot="text">
+    {
+      items.map((item) => {
+        return (
+          <ListCard
+            title={item.data.title}
+            createdDate={item.data.createdDate.toDateString()}
+            slug={item.slug}
+          />
+        );
+      })
+    }
+  </div>
 </PageLayout>

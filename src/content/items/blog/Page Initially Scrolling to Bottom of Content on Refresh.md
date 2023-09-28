@@ -4,10 +4,11 @@ description:
 image: ../../../images/broken-ipad.webp
 imageAlt: Person looking at a broken iPad
 link: 
-draft: true
+draft: false
 createdDate: 2023-09-27T10:07:17Z
 tags:
   - computer
+  - blog
 ---
 ## The Problem
 
@@ -15,7 +16,7 @@ I was working on my Portfolio website when I noticed an issue with some of the p
 
 From a mobile screen size, if the text content of my page overflowed, the initial scroll position would be at the bottom of the page. Like this:
 
-![](../../../images/resized_Screenshot%202023-09-27%20at%2010.15.12%20AM.png%201.webp)
+![](../../../images/scrollIssueScreenshot.webp)
 
 Everything else was looking and acting like I wanted it to. I did have particular demands for the scrolling behavior between mobile and desktop screen sizes, so I was unsure if I'd be able to get the behavior I wanted (page starts with the scroll position at the top) given my other requirements.
 
@@ -41,4 +42,4 @@ My page layout looks something like this:
 
 From a desktop screen size, the text renders on the left side of the page and the image renders on the right side. I decided that on a mobile screen size, I wanted the layout to adapt so that the image would render as a broad strip at the top with the scrollable text content underneath. To achieve this, I set `flex-direction: column-reverse;` on the `<main>` element. This [reverses the direction of the flex container's main axis](https://www.w3.org/TR/css-flexbox-1/#flex-direction-property). 
 
-The unit used to define the height of this element (in confluence with my other CSS rules) affects where the page's initial scroll position is set. 
+The unit used to define the height of this element (in confluence with my other CSS rules) affects where the page's initial scroll position is set. I'm not entirely sure why this happens yet. To solve my problem though, I needed to **remove the `height: 80vh;` rule from my element.**
