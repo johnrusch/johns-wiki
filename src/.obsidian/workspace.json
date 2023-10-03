@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/items/music/Real Guy on Spotify.md",
+                "file": "content/items/blog/Sliding Window Algorithms.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/items/music/Real Guy on Spotify.md",
+                "file": "content/items/blog/Sliding Window Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/items/music/Real Guy on Spotify.md",
+                "file": "content/items/blog/Sliding Window Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/items/music/Real Guy on Spotify.md"
+                "file": "content/items/blog/Sliding Window Algorithms.md"
               }
             }
           }
@@ -173,9 +173,10 @@
   },
   "active": "183dcf5feaa0bade",
   "lastOpenFiles": [
+    "content/items/music/Real Guy on Spotify.md",
+    "content/items/blog/Sliding Window Algorithms.md",
     "content/items/blog/Creating a New Expo App.md",
     "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
-    "content/items/music/Real Guy on Spotify.md",
     "images/scrollIssueScreenshot.webp",
     "content/items/blog/Creating a Documentation and Unit Test-Generating Node Package.md",
     "content/items/blog/Saying Goodbye.md",
