@@ -15,16 +15,12 @@ const boxes = [
 
 <a href={link ? link : slug} class="no-underline" target={link ? "_blank" : "_self"}>
   <div
-    class="mb-2 hover:bg-light-green"
-    style={{
-      border: ".7rem solid transparent",
-      borderImage: `url(${getRandomBox(boxes)}) 20 fill`,
-      WebkitBorderImage: `url(${getRandomBox(boxes)}) 20 fill`,
-      OBorderImage: `url(${getRandomBox(boxes)}) 20 fill`,
-      borderImageSlice: "90 fill",
-    }}
+    class="mb-2 hover:bg-light-green list-card"
   >
     <h3 class="mt-2 mb-2">{title}</h3>
     {createdDate && <small>{createdDate}</small>}
   </div>
 </a>
+<script>
+  import "../scripts/borderImage.js"
+</script>

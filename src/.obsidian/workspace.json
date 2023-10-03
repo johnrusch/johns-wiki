@@ -173,6 +173,7 @@
   },
   "active": "183dcf5feaa0bade",
   "lastOpenFiles": [
+    "scripts/borderImage.js",
     "images/borderBox4.webp",
     "images/borderBox3.webp",
     "images/borderBox2.webp",
@@ -192,7 +193,6 @@
     "content/items/blog/Using AWS Glue.md",
     "images/bros.webp",
     "images/resized_PicsArt_02-13-08.01.15.jpg.webp",
-    "images/willieNelsonPicnic.webp",
     "images/borderBoxes",
     "markdown/computer.md",
     "components/ListCard.astro",

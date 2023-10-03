@@ -1,6 +1,6 @@
 ---
-const currentUrl = Astro.url.pathname;
-console.log(currentUrl);
+// const currentUrl = Astro.url.pathname;
+// console.log(currentUrl);
 ---
 
 <div
@@ -12,40 +12,50 @@ console.log(currentUrl);
     <a class="w-1/2 flex justify-center items-center" href="/about">
       <div
         id="about-icon"
-        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/about' ? 'active' : ''}`
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon`
       >
       </div>
     </a>
     <a class="w-1/2 flex justify-center items-center" href="/computer">
       <div
         id="computer-icon"
-        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/computer' ? 'active' : ''}`
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon`
       >
       </div>
     </a>
     <a class="w-1/2 flex justify-center items-center" href="/blog">
       <div
         id="blog-icon"
-        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/blog' ? 'active' : ''}`
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon`
       >
       </div>
     </a>
     <a class="w-1/2 flex justify-center items-center" href="/music">
       <div
         id="music-icon"
-        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/music' ? 'active' : ''}`
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon`
       >
       </div>
     </a>
     <a class="w-1/2 flex justify-center items-center" href="/art">
       <div
         id="art-icon"
-        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon ${currentUrl === '/art' ? 'active' : ''}`
+        class=`block w-full h-auto opacity-80 rounded-none sm:rounded-lg hover:cursor-pointer animated-icon`
       >
       </div>
     </a>
   </div>
 </div>
+
+<script>
+  const navLinks = document.querySelectorAll(".animated-icon");
+  const currentUrl = window.location.href;
+  navLinks.forEach((link) => {
+    if (link.href === currentUrl) {
+      link.classList.add("active");
+    }
+  })
+</script>
 
 <style>
   .nav-links {
@@ -118,7 +128,6 @@ console.log(currentUrl);
   }
 
   @media screen and (min-width: 1051px) {
-
     .nav-links {
       position: unset;
       max-height: 500px;

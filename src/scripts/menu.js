@@ -28,4 +28,13 @@ document.querySelector("#hamburger-icon").addEventListener("click", (e) => {
   e.target.style.animation = animation;
 });
 
+const navLinks = document.querySelectorAll(".nav-links a");
+const currentUrl = window.location.href;
+navLinks.forEach((link) => {
+  if (link.href === currentUrl) {
+    const div = link.querySelector("div");
+    div.classList.add("active");
+  }
+});
+
 
