@@ -1,16 +1,5 @@
 ---
 const { title, createdDate, slug, link } = Astro.props;
-const getRandomBox = (arr: Array<string>) => {
-  if (arr.length === 0) return;
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  return arr[randomIndex];
-};
-const boxes = [
-  "src/images/borderBox1.webp",
-  "src/images/borderBox2.webp",
-  "src/images/borderBox3.webp",
-  "src/images/borderBox4.webp",
-];
 ---
 
 <a href={link ? link : slug} class="no-underline" target={link ? "_blank" : "_self"}>
