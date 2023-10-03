@@ -14,7 +14,7 @@ const listCards = document.querySelectorAll('.list-card');
 listCards.forEach(card => {
   card.style.border = '.7rem solid transparent';
   card.style.borderImage = `url(${getRandomBox(boxes)}) 20 fill`;
-  card.style.WebkitBorderImage = `url(${getRandomBox(boxes)}) 85 fill`;
+  card.style.WebkitBorderImage = "url(../images/borderBox1.webp) 85 fill";
   card.style.OBorderImage = `url(${getRandomBox(boxes)}) 20 fill`;
   card.style.borderImageSlice = '90 fill';
 });
