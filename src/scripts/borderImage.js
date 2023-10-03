@@ -4,10 +4,10 @@ const getRandomBox = (arr) => {
   return arr[randomIndex];
 };
 const boxes = [
-  "src/images/borderBox1.webp",
-  "src/images/borderBox2.webp",
-  "src/images/borderBox3.webp",
-  "src/images/borderBox4.webp",
+  "../images/borderBox1.webp",
+  "../images/borderBox2.webp",
+  "../images/borderBox3.webp",
+  "../images/borderBox4.webp",
 ];
 
 const listCards = document.querySelectorAll('.list-card');
