@@ -1,4 +1,5 @@
-import { Carousel } from "@material-tailwind/react";
+import pkg from "@material-tailwind/react";
+const { Carousel } = pkg;
 import { CarouselSlide } from "./CarouselSlide";
 export function CarouselDefault({items, ...props}) {
 
