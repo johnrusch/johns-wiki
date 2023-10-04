@@ -31,7 +31,7 @@ document.querySelector("#hamburger-icon").addEventListener("click", (e) => {
 const navLinks = document.querySelectorAll(".nav-links a");
 const currentUrl = window.location.href;
 navLinks.forEach((link) => {
-  if (link.href === currentUrl) {
+  if (currentUrl.includes(link.href)) {
     const div = link.querySelector("div");
     div.classList.add("active");
   }

@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "d31961315725b658",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cc8496d57ee7c861",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/items/blog/Sliding Window Algorithms.md",
+                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/items/blog/Sliding Window Algorithms.md",
+                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/items/blog/Sliding Window Algorithms.md"
+                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md"
               }
             }
           }
@@ -171,8 +183,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "183dcf5feaa0bade",
+  "active": "d31961315725b658",
   "lastOpenFiles": [
+    "content/items/blog/Sliding Window Algorithms.md",
     "images/borderBox4 copy.webp",
     "images/borderBox3 copy.webp",
     "images/borderBox2 copy.webp",
@@ -182,7 +195,6 @@
     "images/borderBox2.webp",
     "images/borderBox1.webp",
     "content/items/music/Real Guy on Spotify.md",
-    "content/items/blog/Sliding Window Algorithms.md",
     "content/items/blog/Creating a New Expo App.md",
     "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
     "images/scrollIssueScreenshot.webp",
@@ -192,7 +204,6 @@
     "scripts/scrollChecker.js",
     "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png 1.webp",
     "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png.webp",
-    "images/broken-ipad.webp",
     "content/items/blog/Using AWS Glue.md",
     "images/borderBoxes",
     "markdown/computer.md",
