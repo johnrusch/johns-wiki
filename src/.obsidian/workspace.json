@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
+                "file": "content/items/computer/bp.house.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 643.5
   },
   "right": {
     "id": "42ad8a6d643d1605",
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
+                "file": "content/items/computer/bp.house.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
+                "file": "content/items/computer/bp.house.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md"
+                "file": "content/items/computer/bp.house.md"
               }
             }
           }
@@ -183,8 +183,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d31961315725b658",
+  "active": "454a1e5337448507",
   "lastOpenFiles": [
+    "images/bphouseScreenshot.png.webp",
+    "images/resized_Screenshot 2023-10-10 at 10.13.46 AM.png.webp",
+    "images/Screenshot 2023-10-10 at 10.13.46 AM.png",
+    "content/items/blog/What is Babel?.md",
+    "content/items/computer/bp.house.md",
+    "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
     "content/items/blog/Sliding Window Algorithms.md",
     "images/borderBox4 copy.webp",
     "images/borderBox3 copy.webp",
@@ -196,14 +202,11 @@
     "images/borderBox1.webp",
     "content/items/music/Real Guy on Spotify.md",
     "content/items/blog/Creating a New Expo App.md",
-    "content/items/blog/Page Initially Scrolling to Bottom of Content on Refresh.md",
     "images/scrollIssueScreenshot.webp",
     "content/items/blog/Creating a Documentation and Unit Test-Generating Node Package.md",
     "content/items/blog/Saying Goodbye.md",
     "markdown/about.md",
     "scripts/scrollChecker.js",
-    "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png 1.webp",
-    "images/resized_Screenshot 2023-09-27 at 10.15.12 AM.png.webp",
     "content/items/blog/Using AWS Glue.md",
     "images/borderBoxes",
     "markdown/computer.md",
