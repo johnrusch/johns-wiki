@@ -2,7 +2,7 @@
 const { title, createdDate, slug, link } = Astro.props;
 ---
 
-<a href={link ? link : slug} class="no-underline" target={link ? "_blank" : "_self"}>
+<a href={link || slug} class="no-underline" target={link ? "_blank" : "_self"}>
   <div
     class="mb-2 hover:bg-light-green list-card"
   >

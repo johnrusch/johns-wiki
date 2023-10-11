@@ -1,5 +1,10 @@
+// for local development
+// import { Carousel } from "@material-tailwind/react";
+
+// for vercel deployment
 import pkg from "@material-tailwind/react";
 const { Carousel } = pkg;
+
 import { CarouselSlide } from "./CarouselSlide";
 export function CarouselDefault({items, ...props}) {
 
@@ -14,6 +19,7 @@ export function CarouselDefault({items, ...props}) {
             title: item.data.title,
             description: item.data.description,
             slug: item.slug,
+            link: item.data.link,
           }}
           key={item.slug}
         />

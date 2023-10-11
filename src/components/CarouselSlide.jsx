@@ -1,8 +1,8 @@
 export function CarouselSlide({ item }) {
-  const { image, imageAlt, title, description, slug, id } = item;
+  const { image, imageAlt, title, description, slug, id, link } = item;
   return (
     <div className="relative h-full w-full">
-      <a href={slug} key={id}>
+      <a href={link || slug} key={id} target={link ? "_blank" : "_self"}>
         {image ? (
           <img
             src={image.src}
